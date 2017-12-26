@@ -6,16 +6,17 @@ package com.example.android.quakereport;
 
 public class earthquake {
 
-    private String Magnitude;
+    private double Magnitude;
     private String Location;
-    private String Date;
-    public earthquake(String m,String L,String D)
+    private long Date;
+
+    public earthquake(double m,String L,long D)
     {
         Magnitude=m;
         Location=L;
         Date=D;
     }
-    public String CallMagnitude()
+    public double CallMagnitude()
     {
         return Magnitude;
     }
@@ -23,7 +24,7 @@ public class earthquake {
     {
         return Location;
     }
-    public String CallDate()
+    public long CallDate()
     {
         return Date;
     }
